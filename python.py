@@ -1,4 +1,4 @@
-char_name = "John"
-char_name = 'bill ' + char_name
-char_age = '35'
-print(char_name, char_age)
+char_name = input("Your name shall go here: ")
+char_age = input("Your age good sir?: ")
+is_male = input("are you a male?: ")
+print(char_name, char_age, is_male)
