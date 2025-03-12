@@ -1,6 +1,7 @@
 from math import *
 print("my calculater")
-list = ["rylie", "wower", "lists", "finally", "this is wozing", "python is amazing"]
-object = {"name": "rylie", "age": 19, "gender": "male"}
-print(object["age"])
-print(list[1:4])
+friend_list = ["Rylie", "Matthew", "Jackson", "Roddy", "David", "Leo"]
+object = {"name": "rylie", "age": 19, "gender": "male", "friends": [1, 3, 4]}
+friend_list.remove("David")
+print(object)
+print(friend_list)
