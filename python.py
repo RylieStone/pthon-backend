@@ -1,15 +1,19 @@
 from math import *
-num1 = float(input("please input the first number: "))
-num2 = float(input("please input the second number: "))
-symbol = input("please input the symbol you'd like to use: ")
+monthConversion = {
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December"
+}
 
-if symbol == "plus" or symbol == "+":
-    print(num1 + num2)
-elif symbol == "multiply" or symbol == "*" or symbol == "x":
-    print(num1 * num2)
-elif symbol == "divide" or symbol == "/":
-    print(num1 / num2)
-elif symbol == "minus" or symbol == "-":
-    print(num1 - num2)
-else:
-    print("invalid operator, try again")
+def monthConv(month):
+    return monthConversion.get(month, "Not a valid key")
+print(monthConv(input("put in the first three letters of a month of your pick: ")))
